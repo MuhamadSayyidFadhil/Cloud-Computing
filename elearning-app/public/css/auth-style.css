@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --main-green: #239b56;
+    --main-darkgreen: #1e8449;
+    --main-text: #ecf0f1;
+}
+
+body {
+    background: linear-gradient(to bottom right, var(--main-green), var(--main-darkgreen));
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-text);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.card-outline {
+    border-top: 5px solid var(--main-green);
+    padding: 1.5rem;
+    background: #fff;
+}
+
+.card-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.card-header .h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--main-green);
+}
+
+.card-body {
+    padding-top: 0;
+}
+
+.btn-primary, .btn-success {
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: var(--main-darkgreen);
+}
+
+.input-group .form-control {
+    border-radius: 8px;
+}
+
+.input-group-text {
+    background-color: #eafaf1;
+    border-radius: 8px;
+    color: var(--main-green);
+    border: none;
+}
+
+input.form-control:focus {
+    border-color: var(--main-green);
+    box-shadow: 0 0 0 0.15rem rgba(46, 204, 113, 0.25);
+}
+
+.alert-danger {
+    background-color: #fef2f2;
+    color: #e74c3c;
+    border: 1px solid #e0b4b4;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--main-green);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--main-darkgreen);
+    text-decoration: underline;
+}
+
+.text-center a {
+    display: inline-block;
+    margin: 4px 8px;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
